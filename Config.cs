@@ -140,6 +140,7 @@ namespace MicroConfig
             }
             catch { }
         }
+
         public Config(){}
 
         public Config(bool autoload)
