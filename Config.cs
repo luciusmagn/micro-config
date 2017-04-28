@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace MicroConfig
 {
     /// <summary>
     /// Třída použitá jako konfig musí být podtřídou třídy Config
-    /// Aby bylo pole uloženo, musí být public a jméno nezačínat znakem "_"
+    /// Aby bylo pole uloženo, musí být veřejné a jméno nezačínat znakem "_"
     /// Všechna ukládaná pole musí mít počáteční hodnotu
     /// Uložení: Config.Save(instanceofyourconfig);
     /// Načtení: instanceofyourconfig.Deserialize();
@@ -24,8 +24,8 @@ namespace MicroConfig
         /// Serializuje objekt
         /// </summary>
         /// <param name="what">
-        ///     object whose fields you want to serialize
-        ///     it is required that what extends Config class.
+        ///     objekt jehož pole mají být serializována
+        ///     je vyžadováno aby typ objektu byl podtřídou třídy Config
         /// </param>
         /// <returns>Textový řetězec serializovaných hodnot</returns>
         public static string Serialize(object what)
