@@ -37,13 +37,13 @@ Každý řádek je rozebrán a vytvoří se z něj dvojice klíč:hodnota.
 .IP \fB\n+[step] \fR
 Pomocí reflexe se získají informace o typu objektu a jeho členech.
 .IP \fB\n+[step] \fR
-Každému členu, pro který byl nalezen klíč je nastavena patřičná hodnota a tím je ukončeno načítání.
+Každému členu, pro který byl nalezen klíč, je nastavena patřičná hodnota a tím je ukončeno načítání.
 .IP \fB\n+[step] \fR
 Při ukládání je proveden opačný postup. Zavolání funkce Save() načte pomocí reflexe všechny členy dané třídy a vybere z nich ty, které jsou veřejné, primitivních typů a jejichž jméno nezačíná podtržítkem.
 .IP \fB\n+[step] \fR
 Z vybraných členů jsou vytvořeny dvojice klíč:hodnota.
 .IP \fB\n+[step] \fR
-Dvojice jsou zapsány do souboru configs/Třida.cfg (pokud to není jinak specifikováno) ve formě 'název = hodnota'. Členy, jejichž hodnota nebyla dříve určena v konfiguračním souboru mají přidány záznamy s výchozímy hodnotami
+Dvojice jsou zapsány do souboru configs/Třida.cfg (pokud to není jinak specifikováno) ve formě 'název = hodnota'. Členy, jejichž hodnota nebyla dříve určena v konfiguračním souboru, mají přidány záznamy s výchozími hodnotami
 .SH LIMITACE
     MicroConfig nedokáže zpracovat složitější typy a pole.
 .SH MAPA KÓDU
